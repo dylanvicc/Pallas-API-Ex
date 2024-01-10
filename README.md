@@ -1,4 +1,8 @@
-Database structure example.
+An example backend developed in .NET Core. Foundation for the Pallas mobile application's framework. Supports login authorization via JWT, Swagger UI, & Swagger Authorization.
+
+A service architecture is implemented to run asynchronously alongside entity framework to handle SQL server database transactions.
+
+Example database structure is as follows.
 
 RegisteredUsers
 
@@ -10,4 +14,4 @@ Inventory
 | Index | Metric | Description | Quantity | 
 | :---:   | :---: | :---: | :---: |
 
-Password hashing is supported. Example uses SHA1. However, the service could be modified to support any algorithm.
+Password hashing is implemented. Example uses SHA1. However, the service could be modified to support any algorithm.
