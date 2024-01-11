@@ -1,4 +1,4 @@
-An example backend developed in .NET Core. Foundation for the Pallas mobile application's framework. Supports login authorization via JWT, Swagger UI, & Swagger Authorization.
+An example backend developed in .NET Core. Foundation for the Pallas mobile application's alpha backend. Supports login authorization via JWT, Swagger UI, & Swagger Authorization.
 
 A service architecture is implemented to run asynchronously alongside entity framework to handle SQL server database transactions.
 
