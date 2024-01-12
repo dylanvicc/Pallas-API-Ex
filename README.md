@@ -26,9 +26,9 @@ public async Task<IActionResult> Login([FromBody] LoginCredentials credentials)
     if (credentials.Username == null || credentials.Password == null)
       return BadRequest();
 
-    var exists = await _loginService.ValidateLoginAsync(credentials);
+    var valid = await _loginService.ValidateLoginAsync(credentials);
 
-    if (exists == false)
+    if (valid == false)
       return Unauthorized();
 
     var token = _tokenService.BuildToken(_configuration["Jwt:Key"].ToString(), _configuration["Jwt:Issuer"].ToString(), credentials);
