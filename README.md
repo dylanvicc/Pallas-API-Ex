@@ -28,7 +28,7 @@ public async Task<IActionResult> Login([FromBody] LoginCredentials credentials)
 
     var valid = await _loginService.ValidateLoginAsync(credentials);
 
-    if (valid == false)
+    if (!valid)
       return Unauthorized();
 
     var token = _tokenService.BuildToken(_configuration["Jwt:Key"].ToString(), _configuration["Jwt:Issuer"].ToString(), credentials);
