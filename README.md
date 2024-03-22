@@ -16,7 +16,7 @@ Inventory
 
 Password hashing is implemented. Example uses SHA1. However, the service could be modified to support any algorithm.
 
-Resulting authorization endpoint.
+Resulting authentication endpoint.
 
 ````c#
 [HttpPost]
